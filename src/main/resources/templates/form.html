@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8"/>
+    
+    </head>
+    <body>
+        <form action="#" th:action="@{/ejemplo3/addperson}" th:object ="${person}" method="post">
+            <p>Nombre: <input type="text" th:field="*{name}"/></p>
+            <p th:if="${#fields.hasErrors('name')}" th:errors="*{name}">El nombre no es compatible</p>
+            <p>Edad: <input type="number" th:field="*{age}"/></p>
+             <p th:if="${#fields.hasErrors('age')}" th:errors="*{age}">La edad tiene que se mayor a 18</p>
+            <p><input type="submit" value="Enviar"/> </p>
+            
+        </form>
+    </body>
+</html>
