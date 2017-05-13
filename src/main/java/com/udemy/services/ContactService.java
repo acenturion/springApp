@@ -5,13 +5,16 @@
  */
 package com.udemy.services;
 
-import com.udemy.model.Person;
+
+import com.udemy.model.ContactModel;
 import java.util.List;
 
 /**
  *
- * @author AlejandroThalamus
+ * @author Minimal
  */
-public interface EjemploServicio {
-    public abstract List<Person> getListPeople();
+public interface ContactService {
+
+    public abstract ContactModel addContact(ContactModel contactModel);
+    public abstract  List<ContactModel> listAllContacts();
 }

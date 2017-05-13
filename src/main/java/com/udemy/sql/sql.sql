@@ -21,4 +21,5 @@ create table curso(
 
 insert into curso VALUES (1,'Spring','Curso de java Spring',150,'7 horas');
 insert into curso VALUES (2,'Hibernate','Curso de Framework Hibernate',100,'6 horas');
-select * from curso
+select * from contact;
+drop table contact;

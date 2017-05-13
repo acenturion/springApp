@@ -1,6 +1,6 @@
 spring:
     datasource:
-        url: jdbc:mysql://localhost:3306/springNinja
+        url: jdbc:mysql://localhost:3306/springNinja?useSSL=false
         username: root
     jpa:
         show-sql: true

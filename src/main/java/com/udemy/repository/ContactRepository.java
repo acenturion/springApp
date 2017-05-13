@@ -5,17 +5,17 @@
  */
 package com.udemy.repository;
 
-import com.udemy.entity.Curso;
+import com.udemy.entity.Contact;
 import java.io.Serializable;
-import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 /**
  *
- * @author AlejandroThalamus
+ * @author Minimal
  */
-@Repository("cursoJpaRepository")
-public interface CursoJpaRepository extends JpaRepository<Curso, Serializable>{
-  
+
+@Repository("contactRepository")
+public interface ContactRepository extends JpaRepository<Contact, Serializable>{
+    
 }
