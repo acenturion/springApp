@@ -5,7 +5,7 @@
  */
 package com.udemy.repository;
 
-import com.udemy.entity.Contact;
+import com.udemy.entity.User;
 import java.io.Serializable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
@@ -14,9 +14,8 @@ import org.springframework.stereotype.Repository;
  *
  * @author Minimal
  */
-
-@Repository("contactRepository")
-public interface ContactRepository extends JpaRepository<Contact, Serializable>{
+@Repository("userRepository")
+public interface UserRepository extends JpaRepository<User, Serializable>{
     
-    public abstract Contact findById(int id);
+    public abstract  User findByUsername(String username);
 }
