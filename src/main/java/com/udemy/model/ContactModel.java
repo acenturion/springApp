@@ -26,6 +26,14 @@ public class ContactModel {
         this.telephone = telephone;
         this.city = city;
     }
+
+    public ContactModel(int id, String firstname, String lastname, String telephone, String city) {
+        this.id = id;
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.telephone = telephone;
+        this.city = city;
+    }
     
     
 

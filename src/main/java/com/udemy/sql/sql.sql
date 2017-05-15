@@ -31,6 +31,7 @@ insert into users VALUES ('user',1,'$2a$10$MdEPJ.iGF3p7orJz7AeyA.Q3PwvT9Kp/1bWOo
 select * from users;
 select * from contact;
 select * from user_roles;
+select * from log;
 
 
 
